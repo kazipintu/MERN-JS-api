@@ -14,7 +14,7 @@ function displayUsers(users) {
   for (const user of users) {
     console.log(user)
     const divUser = document.createElement('div')
-
+    divUser.classList.add('div-user')
     divUser.innerHTML = `
     <h3>Name: ${user.name}</h3>
     <p>Username: ${user.username}</p>
